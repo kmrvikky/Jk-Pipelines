@@ -1,0 +1,11 @@
+pipelines {
+      agent any
+          stages {
+              stage ('Build another job')
+                  {
+                    steps {
+                        Build 'Job-1'
+                          }
+                    }
+                  }
+            }
